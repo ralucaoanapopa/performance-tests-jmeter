@@ -24,9 +24,34 @@ Thread properties:
 
 *Ramp-up* is the amount of time it will take Apache JMeter™ to add all test users (threads) to a test execution. Or in other words, how long it will take for JMeter to start execution of all the threads.
 
-### Common Assertions
+## Assertions
+
+Common Assertions
 - Response Assertion
 - Duration Assertion
 - Size Assertion
 - HTML Assertion
 - XPath Assertion (used for API)
+
+## Listeners
+
+Listener = component that shows the results of the samples. The results can be shown in a tree, tables, graphs or simply written to a log file
+
+Latency = when starting to get the response
+
+*View Results Tree* should not be used for heavy load up.
+
+*Graph Results*: usually we need to see *Average* and *Throughput*; this is also a high lead memory consumer listener, so it's not recomended to have it enabled while executing script with a heavy load.
+
+Common Listeners
+- View Results in Table
+- View Results in Tree
+- Aggregate Report
+- Summary Report
+- Graph Results
+- Sample Data Writer - the only listener to use when running tests with heavy load (many users)
+
+## Tools available for recording UI web tests and export to JMeter
+- Blazemeter - [Chrome Plugin](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi/related?hl=en)
+
+Record navigations / actions on a website then export as .jmx file.
