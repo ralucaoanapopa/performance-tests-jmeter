@@ -16,6 +16,12 @@ java -version
 
 # Results
 
+# Web sites used for testing
+
+- [Shop Demo QA](https://shop.demoqa.com/)
+- [Blaze Demo](https://blazedemo.com/)
+- [Ecommerce Lambda Test](https://ecommerce-playground.lambdatest.io/)
+
 # Notes
 
 Thread properties:
@@ -54,6 +60,7 @@ Common Listeners
 - Sample Data Writer - the only listener to use when running tests with heavy load (many users)
 
 ## Tools available for recording UI web tests and export to JMeter
-- Blazemeter - [Chrome Plugin](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi/related?hl=en)
+- Blazemeter - [Chrome Plugin](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi/related?hl=en): can download .jmx file only when logged in
+- export recorded requests from the "Network" tab from developer tools in form of *.HAR* file and convert this file into a JMeter test script using [BlazeMeter Converter](https://converter.blazemeter.com/); this is not an easy solution for website which use lots of media resources as each is logged as an entry and becomes a request in JMeter plan.
 
 Record navigations / actions on a website then export as .jmx file.
