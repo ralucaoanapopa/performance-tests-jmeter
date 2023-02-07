@@ -35,9 +35,11 @@ Common Assertions
 
 ## Listeners
 
-Listener = component that shows the results of the samples. The results can be shown in a tree, tables, graphs or simply written to a log file
+Listener is a component that shows the results of the samples. The results can be shown in a tree, tables, graphs or simply written to a log file
 
 Latency = when starting to get the response
+
+*Throughput* is a measure of how many units of work are being processed. In the case of load testing, this is usually hits per second, also known as requests per second.
 
 *View Results Tree* should not be used for heavy load up.
 
