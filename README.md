@@ -21,16 +21,23 @@ jmeter -n -t <jmeter_file.jmx> -l <location_result_file>
 ```
 
 -n = execute jmeter in non gui mode
+
 -t = location of jmeter script
+
 -l = location of result file
 
 # Results
 
-# Web sites used for testing
+# Used for testing
 
+Websites
 - [Shop Demo QA](https://shop.demoqa.com/)
 - [Blaze Demo](https://blazedemo.com/)
 - [Ecommerce Lambda Test](https://ecommerce-playground.lambdatest.io/)
+
+APIs
+- [Library API](https://glitch.com/edit/#!/postman-library-api?path=README.md)
+- [Country Info](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso)
 
 # Notes
 
