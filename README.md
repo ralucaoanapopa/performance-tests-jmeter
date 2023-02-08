@@ -14,6 +14,16 @@ java -version
 
 # Run performance tests
 
+## From command line / non-GUI mode
+
+```
+jmeter -n -t <jmeter_file.jmx> -l <location_result_file>
+```
+
+-n = execute jmeter in non gui mode
+-t = location of jmeter script
+-l = location of result file
+
 # Results
 
 # Web sites used for testing
